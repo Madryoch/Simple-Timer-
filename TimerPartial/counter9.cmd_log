@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/XilinxProjects/Timer/counter9.xst" -ofn "C:/XilinxProjects/Timer/counter9.syr" 

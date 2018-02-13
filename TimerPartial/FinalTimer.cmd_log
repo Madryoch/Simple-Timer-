@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/XilinxProjects/Timer/FinalTimer.xst" -ofn "C:/XilinxProjects/Timer/FinalTimer.syr" 
+xst -intstyle ise -ifn "C:/XilinxProjects/Timer/FinalTimer.xst" -ofn "C:/XilinxProjects/Timer/FinalTimer.syr" 
+xst -intstyle ise -ifn "C:/XilinxProjects/Timer/FinalTimer.xst" -ofn "C:/XilinxProjects/Timer/FinalTimer.syr" 
+netgen -intstyle ise -ar Structure -tm FinalTimer -w -dir netgen/synthesis -ofmt vhdl -sim FinalTimer.ngc FinalTimer_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-4 FinalTimer.ngc FinalTimer.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o FinalTimer_map.ncd FinalTimer.ngd FinalTimer.pcf 
+par -w -intstyle ise -ol high -t 1 FinalTimer_map.ncd FinalTimer.ncd FinalTimer.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FinalTimer.twx FinalTimer.ncd -o FinalTimer.twr FinalTimer.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-4 FinalTimer.ngc FinalTimer.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o FinalTimer_map.ncd FinalTimer.ngd FinalTimer.pcf 
+par -w -intstyle ise -ol high -t 1 FinalTimer_map.ncd FinalTimer.ncd FinalTimer.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FinalTimer.twx FinalTimer.ncd -o FinalTimer.twr FinalTimer.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UserConstraints.ucf -p xc3s1600e-fg320-4 FinalTimer.ngc FinalTimer.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o FinalTimer_map.ncd FinalTimer.ngd FinalTimer.pcf 
+par -w -intstyle ise -ol high -t 1 FinalTimer_map.ncd FinalTimer.ncd FinalTimer.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FinalTimer.twx FinalTimer.ncd -o FinalTimer.twr FinalTimer.pcf -ucf UserConstraints.ucf 

@@ -1,0 +1,8 @@
+//! **************************************************************************
+// Written by: Map M.53d on Wed Jul 10 14:14:34 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "clk100_BUFGP/IBUFG" BEL "clk100_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

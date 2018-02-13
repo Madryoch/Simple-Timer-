@@ -1,0 +1,740 @@
+Release 12.1 - xst M.53d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: FinalTimer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FinalTimer.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FinalTimer"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-4-fg320
+
+---- Source Options
+Top Module Name                    : FinalTimer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : FinalTimer.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/XilinxProjects/Timer/minutesU.vhd" in Library work.
+Architecture mu of Entity minutesu is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/minutesD.vhd" in Library work.
+Architecture md of Entity minutesd is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/secondsUnits.vhd" in Library work.
+Architecture s9u of Entity secondsunits is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/secondsD.vhd" in Library work.
+Architecture s6d of Entity secondsd is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/counterc9u.vhd" in Library work.
+Architecture cn9u of Entity counter9 is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/counterc9d.vhd" in Library work.
+Architecture c9d of Entity counterc9d is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/debouncer.vhd" in Library work.
+Architecture debt of Entity debouncert is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/SelectionBuffer.vhd" in Library work.
+Architecture selbuff of Entity selectionbuffer is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/csec.vhd" in Library work.
+Architecture csc of Entity csec is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/sec.vhd" in Library work.
+Architecture sc of Entity sec is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/minu.vhd" in Library work.
+Architecture mins of Entity minu is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/initiator.vhd" in Library work.
+Architecture init1 of Entity initiator is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/startStop.vhd" in Library work.
+Architecture startstop1 of Entity startstop is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/timer.vhd" in Library work.
+Architecture tmr of Entity timer is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/selector.vhd" in Library work.
+Architecture sel1 of Entity selector is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/Mux3x8output.vhd" in Library work.
+Architecture m3x8 of Entity mux3x8output is up to date.
+Compiling vhdl file "C:/XilinxProjects/counter500k/counter250k.vhd" in Library work.
+Architecture counter250 of Entity counter250k is up to date.
+Compiling vhdl file "C:/XilinxProjects/counter500k/wavegen.vhd" in Library work.
+Architecture wave of Entity wavegen is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/debouncerR.vhd" in Library work.
+Architecture debr of Entity debouncerr is up to date.
+Compiling vhdl file "C:/XilinxProjects/counter500k/clockgen.vhd" in Library work.
+Architecture beh of Entity clockgen is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/CWInputs.vhd" in Library work.
+Architecture cwi of Entity cwinputs is up to date.
+Compiling vhdl file "C:/XilinxProjects/Timer/FinalTimer.vhd" in Library work.
+Entity <finaltimer> compiled.
+Entity <finaltimer> (Architecture <ftim>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <FinalTimer> in library <work> (architecture <ftim>).
+
+Analyzing hierarchy for entity <debouncerR> in library <work> (architecture <debr>).
+
+Analyzing hierarchy for entity <clockgen> in library <work> (architecture <beh>).
+
+Analyzing hierarchy for entity <CWInputs> in library <work> (architecture <cwi>).
+
+Analyzing hierarchy for entity <counter250k> in library <work> (architecture <counter250>).
+
+Analyzing hierarchy for entity <wavegen> in library <work> (architecture <wave>).
+
+Analyzing hierarchy for entity <startStop> in library <work> (architecture <startstop1>).
+
+Analyzing hierarchy for entity <timer> in library <work> (architecture <tmr>).
+
+Analyzing hierarchy for entity <selector> in library <work> (architecture <sel1>).
+
+Analyzing hierarchy for entity <Mux3x8output> in library <work> (architecture <m3x8>).
+
+Analyzing hierarchy for entity <debouncerT> in library <work> (architecture <debt>).
+
+Analyzing hierarchy for entity <initiator> in library <work> (architecture <init1>).
+
+Analyzing hierarchy for entity <csec> in library <work> (architecture <csc>).
+
+Analyzing hierarchy for entity <sec> in library <work> (architecture <sc>).
+
+Analyzing hierarchy for entity <minu> in library <work> (architecture <mins>).
+
+Analyzing hierarchy for entity <SelectionBuffer> in library <work> (architecture <selbuff>).
+
+Analyzing hierarchy for entity <counter9> in library <work> (architecture <cn9>).
+
+Analyzing hierarchy for entity <counterc9d> in library <work> (architecture <c9d>).
+
+Analyzing hierarchy for entity <secondsUnits> in library <work> (architecture <s9u>).
+
+Analyzing hierarchy for entity <secondsD> in library <work> (architecture <s6d>).
+
+Analyzing hierarchy for entity <minutesU> in library <work> (architecture <mu>).
+
+Analyzing hierarchy for entity <minutesD> in library <work> (architecture <md>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <FinalTimer> in library <work> (Architecture <ftim>).
+Entity <FinalTimer> analyzed. Unit <FinalTimer> generated.
+
+Analyzing Entity <debouncerR> in library <work> (Architecture <debr>).
+Entity <debouncerR> analyzed. Unit <debouncerR> generated.
+
+Analyzing Entity <clockgen> in library <work> (Architecture <beh>).
+Entity <clockgen> analyzed. Unit <clockgen> generated.
+
+Analyzing Entity <counter250k> in library <work> (Architecture <counter250>).
+WARNING:Xst:819 - "C:/XilinxProjects/counter500k/counter250k.vhd" line 24: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <ct>
+Entity <counter250k> analyzed. Unit <counter250k> generated.
+
+Analyzing Entity <wavegen> in library <work> (Architecture <wave>).
+WARNING:Xst:819 - "C:/XilinxProjects/counter500k/wavegen.vhd" line 24: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rst>, <wav>
+Entity <wavegen> analyzed. Unit <wavegen> generated.
+
+Analyzing Entity <CWInputs> in library <work> (Architecture <cwi>).
+Entity <CWInputs> analyzed. Unit <CWInputs> generated.
+
+Analyzing Entity <startStop> in library <work> (Architecture <startstop1>).
+Entity <startStop> analyzed. Unit <startStop> generated.
+
+Analyzing Entity <debouncerT> in library <work> (Architecture <debt>).
+Entity <debouncerT> analyzed. Unit <debouncerT> generated.
+
+Analyzing Entity <initiator> in library <work> (Architecture <init1>).
+WARNING:Xst:819 - "C:/XilinxProjects/Timer/initiator.vhd" line 19: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <init>
+Entity <initiator> analyzed. Unit <initiator> generated.
+
+Analyzing Entity <timer> in library <work> (Architecture <tmr>).
+Entity <timer> analyzed. Unit <timer> generated.
+
+Analyzing Entity <csec> in library <work> (Architecture <csc>).
+Entity <csec> analyzed. Unit <csec> generated.
+
+Analyzing Entity <counter9> in library <work> (Architecture <cn9>).
+Entity <counter9> analyzed. Unit <counter9> generated.
+
+Analyzing Entity <counterc9d> in library <work> (Architecture <c9d>).
+Entity <counterc9d> analyzed. Unit <counterc9d> generated.
+
+Analyzing Entity <sec> in library <work> (Architecture <sc>).
+Entity <sec> analyzed. Unit <sec> generated.
+
+Analyzing Entity <secondsUnits> in library <work> (Architecture <s9u>).
+Entity <secondsUnits> analyzed. Unit <secondsUnits> generated.
+
+Analyzing Entity <secondsD> in library <work> (Architecture <s6d>).
+Entity <secondsD> analyzed. Unit <secondsD> generated.
+
+Analyzing Entity <minu> in library <work> (Architecture <mins>).
+Entity <minu> analyzed. Unit <minu> generated.
+
+Analyzing Entity <minutesU> in library <work> (Architecture <mu>).
+Entity <minutesU> analyzed. Unit <minutesU> generated.
+
+Analyzing Entity <minutesD> in library <work> (Architecture <md>).
+Entity <minutesD> analyzed. Unit <minutesD> generated.
+
+Analyzing Entity <selector> in library <work> (Architecture <sel1>).
+Entity <selector> analyzed. Unit <selector> generated.
+
+Analyzing Entity <SelectionBuffer> in library <work> (Architecture <selbuff>).
+WARNING:Xst:819 - "C:/XilinxProjects/Timer/SelectionBuffer.vhd" line 22: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <selector>
+Entity <SelectionBuffer> analyzed. Unit <SelectionBuffer> generated.
+
+Analyzing Entity <Mux3x8output> in library <work> (Architecture <m3x8>).
+Entity <Mux3x8output> analyzed. Unit <Mux3x8output> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debouncerR>.
+    Related source file is "C:/XilinxProjects/Timer/debouncerR.vhd".
+    Found 1-bit register for signal <Q0>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <Q3>.
+    Found 1-bit register for signal <Q4>.
+    Found 1-bit register for signal <Q5>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <debouncerR> synthesized.
+
+
+Synthesizing Unit <counter250k>.
+    Related source file is "C:/XilinxProjects/counter500k/counter250k.vhd".
+    Found 18-bit up counter for signal <ct>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter250k> synthesized.
+
+
+Synthesizing Unit <wavegen>.
+    Related source file is "C:/XilinxProjects/counter500k/wavegen.vhd".
+    Found 1-bit register for signal <wav>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <wavegen> synthesized.
+
+
+Synthesizing Unit <Mux3x8output>.
+    Related source file is "C:/XilinxProjects/Timer/Mux3x8output.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <tempvec>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <Mux3x8output> synthesized.
+
+
+Synthesizing Unit <debouncerT>.
+    Related source file is "C:/XilinxProjects/Timer/debouncer.vhd".
+    Found 1-bit register for signal <Q0>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <Q3>.
+    Found 1-bit register for signal <Q4>.
+    Found 1-bit register for signal <Q5>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <debouncerT> synthesized.
+
+
+Synthesizing Unit <initiator>.
+    Related source file is "C:/XilinxProjects/Timer/initiator.vhd".
+    Found 1-bit register for signal <init>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <initiator> synthesized.
+
+
+Synthesizing Unit <counter9>.
+    Related source file is "C:/XilinxProjects/Timer/counter9.vhd".
+    Found 1-bit register for signal <c9u>.
+    Found 4-bit up counter for signal <val2>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <counter9> synthesized.
+
+
+Synthesizing Unit <counterc9d>.
+    Related source file is "C:/XilinxProjects/Timer/counterc9d.vhd".
+    Found 4-bit register for signal <val2>.
+    Found 4-bit adder for signal <val2$addsub0000> created at line 43.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <counterc9d> synthesized.
+
+
+Synthesizing Unit <secondsUnits>.
+    Related source file is "C:/XilinxProjects/Timer/secondsUnits.vhd".
+    Found 4-bit register for signal <val2>.
+    Found 4-bit adder for signal <val2$addsub0000> created at line 42.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <secondsUnits> synthesized.
+
+
+Synthesizing Unit <secondsD>.
+    Related source file is "C:/XilinxProjects/Timer/secondsD.vhd".
+    Found 4-bit register for signal <val2>.
+    Found 4-bit adder for signal <val2$addsub0000> created at line 43.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <secondsD> synthesized.
+
+
+Synthesizing Unit <minutesU>.
+    Related source file is "C:/XilinxProjects/Timer/minutesU.vhd".
+    Found 4-bit register for signal <val2>.
+    Found 4-bit adder for signal <val2$addsub0000> created at line 43.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <minutesU> synthesized.
+
+
+Synthesizing Unit <minutesD>.
+    Related source file is "C:/XilinxProjects/Timer/minutesD.vhd".
+    Found 4-bit up counter for signal <val2>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <minutesD> synthesized.
+
+
+Synthesizing Unit <SelectionBuffer>.
+    Related source file is "C:/XilinxProjects/Timer/SelectionBuffer.vhd".
+    Found 2-bit up counter for signal <selector>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <SelectionBuffer> synthesized.
+
+
+Synthesizing Unit <clockgen>.
+    Related source file is "C:/XilinxProjects/counter500k/clockgen.vhd".
+Unit <clockgen> synthesized.
+
+
+Synthesizing Unit <startStop>.
+    Related source file is "C:/XilinxProjects/Timer/startStop.vhd".
+Unit <startStop> synthesized.
+
+
+Synthesizing Unit <selector>.
+    Related source file is "C:/XilinxProjects/Timer/selector.vhd".
+Unit <selector> synthesized.
+
+
+Synthesizing Unit <csec>.
+    Related source file is "C:/XilinxProjects/Timer/csec.vhd".
+Unit <csec> synthesized.
+
+
+Synthesizing Unit <sec>.
+    Related source file is "C:/XilinxProjects/Timer/sec.vhd".
+Unit <sec> synthesized.
+
+
+Synthesizing Unit <minu>.
+    Related source file is "C:/XilinxProjects/Timer/minu.vhd".
+Unit <minu> synthesized.
+
+
+Synthesizing Unit <timer>.
+    Related source file is "C:/XilinxProjects/Timer/timer.vhd".
+Unit <timer> synthesized.
+
+
+Synthesizing Unit <CWInputs>.
+    Related source file is "C:/XilinxProjects/Timer/CWInputs.vhd".
+Unit <CWInputs> synthesized.
+
+
+Synthesizing Unit <FinalTimer>.
+    Related source file is "C:/XilinxProjects/Timer/FinalTimer.vhd".
+Unit <FinalTimer> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 4
+# Counters                                             : 4
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 25
+ 1-bit register                                        : 21
+ 4-bit register                                        : 4
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 4
+# Counters                                             : 4
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FinalTimer> ...
+
+Optimizing unit <counterc9d> ...
+
+Optimizing unit <secondsUnits> ...
+
+Optimizing unit <secondsD> ...
+
+Optimizing unit <minutesU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FinalTimer, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : FinalTimer.ngr
+Top Level Output File Name         : FinalTimer
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 157
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 17
+#      LUT2                        : 26
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 16
+#      LUT3_D                      : 3
+#      LUT3_L                      : 3
+#      LUT4                        : 33
+#      LUT4_D                      : 5
+#      LUT4_L                      : 1
+#      MUXCY                       : 17
+#      MUXF5                       : 8
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 65
+#      FD                          : 18
+#      FDCE                        : 1
+#      FDE                         : 16
+#      FDR                         : 17
+#      FDRE                        : 12
+#      FDRS                        : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 3
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-4 
+
+ Number of Slices:                       62  out of  14752     0%  
+ Number of Slice Flip Flops:             65  out of  29504     0%  
+ Number of 4 input LUTs:                112  out of  29504     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    250     4%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+cg/wavgen/wav1                     | BUFG                   | 46    |
+clk                                | BUFGP                  | 19    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+cg/count/ct_cst(cg/count/ct_cst1:O)| NONE(cg/wavgen/wav)    | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.246ns (Maximum Frequency: 160.102MHz)
+   Minimum input arrival time before clock: 1.946ns
+   Maximum output required time after clock: 6.568ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'cg/wavgen/wav1'
+  Clock period: 5.900ns (frequency: 169.492MHz)
+  Total number of paths / destination ports: 688 / 83
+-------------------------------------------------------------------------
+Delay:               5.900ns (Levels of Logic = 3)
+  Source:            tc/S2/sc/sd/val2_3 (FF)
+  Destination:       tc/S2/mn/su/val2_3 (FF)
+  Source Clock:      cg/wavgen/wav1 rising
+  Destination Clock: cg/wavgen/wav1 rising
+
+  Data Path: tc/S2/sc/sd/val2_3 to tc/S2/mn/su/val2_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.591   0.808  tc/S2/sc/sd/val2_3 (tc/S2/sc/sd/val2_3)
+     LUT4:I0->O            1   0.704   0.499  tc/S2/sc/su/suen_SW0 (N75)
+     LUT4_D:I1->O          6   0.704   0.748  tc/S2/sc/sd/mien (tc/S2/temp2)
+     LUT2:I1->O            4   0.704   0.587  tc/S2/mn/su/val2_not00021 (tc/S2/mn/su/val2_not0002)
+     FDE:CE                    0.555          tc/S2/mn/su/val2_0
+    ----------------------------------------
+    Total                      5.900ns (3.258ns logic, 2.642ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.246ns (frequency: 160.102MHz)
+  Total number of paths / destination ports: 514 / 38
+-------------------------------------------------------------------------
+Delay:               6.246ns (Levels of Logic = 3)
+  Source:            cg/count/ct_3 (FF)
+  Destination:       cg/count/ct_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cg/count/ct_3 to cg/count/ct_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.706  cg/count/ct_3 (cg/count/ct_3)
+     LUT4:I0->O            1   0.704   0.424  cg/count/Mcount_ct_val14 (cg/count/Mcount_ct_val14)
+     LUT4:I3->O            2   0.704   0.451  cg/count/Mcount_ct_val117 (N3)
+     LUT4:I3->O           17   0.704   1.051  cg/count/Mcount_ct_val2 (cg/count/Mcount_ct_val)
+     FDR:R                     0.911          cg/count/ct_1
+    ----------------------------------------
+    Total                      6.246ns (3.614ns logic, 2.632ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'cg/wavgen/wav1'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              1.946ns (Levels of Logic = 1)
+  Source:            bsig (PAD)
+  Destination:       rs/Q0 (FF)
+  Destination Clock: cg/wavgen/wav1 rising
+
+  Data Path: bsig to rs/Q0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  bsig_IBUF (bsig_IBUF)
+     FD:D                      0.308          rs/Q0
+    ----------------------------------------
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'cg/wavgen/wav1'
+  Total number of paths / destination ports: 48 / 8
+-------------------------------------------------------------------------
+Offset:              6.568ns (Levels of Logic = 3)
+  Source:            tc/S3/selectionOutput/selector_0 (FF)
+  Destination:       b0<0> (PAD)
+  Source Clock:      cg/wavgen/wav1 rising
+
+  Data Path: tc/S3/selectionOutput/selector_0 to b0<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            19   0.591   1.260  tc/S3/selectionOutput/selector_0 (tc/S3/selectionOutput/selector_0)
+     LUT3:I0->O            1   0.704   0.000  tc/S4/Mmux_tempvec82 (tc/S4/Mmux_tempvec81)
+     MUXF5:I0->O           1   0.321   0.420  tc/S4/Mmux_tempvec8_f5 (b3_0_OBUF)
+     OBUF:I->O                 3.272          b3_0_OBUF (b3<0>)
+    ----------------------------------------
+    Total                      6.568ns (4.888ns logic, 1.680ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.81 secs
+ 
+--> 
+
+Total memory usage is 138284 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

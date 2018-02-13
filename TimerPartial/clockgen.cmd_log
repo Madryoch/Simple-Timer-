@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/XilinxProjects/Timer/clockgen.xst" -ofn "C:/XilinxProjects/Timer/clockgen.syr" 
+xst -intstyle ise -ifn "C:/XilinxProjects/Timer/clockgen.xst" -ofn "C:/XilinxProjects/Timer/clockgen.syr" 

@@ -1,0 +1,3 @@
+vhdl work "../counter500k/wavegen.vhd"
+vhdl work "../counter500k/counter250k.vhd"
+vhdl work "../counter500k/clockgen.vhd"
